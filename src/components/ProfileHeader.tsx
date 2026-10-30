@@ -13,21 +13,21 @@ export default function ProfileHeader({ name, bio, image }: Props) {
         <Image
           src={image}
           alt={`${name} 프로필 사진`}
-          width={128}
-          height={128}
-          className="h-32 w-32 rounded-full object-cover ring-2 ring-gray-200 dark:ring-gray-700"
+          width={112}
+          height={112}
+          className="h-28 w-28 rounded-full object-cover shadow-[0_12px_32px_-12px_rgba(160,82,45,0.55)] ring-4 ring-white/80 dark:shadow-[0_12px_32px_-12px_rgba(0,0,0,0.8)] dark:ring-white/10"
           priority
         />
       ) : (
         <div
           aria-hidden
-          className="flex h-32 w-32 items-center justify-center rounded-full bg-emerald-500 text-4xl font-bold text-white ring-2 ring-gray-200 dark:ring-gray-700"
+          className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-orange-300 to-rose-400 text-4xl font-bold text-white shadow-[0_12px_32px_-12px_rgba(160,82,45,0.55)] ring-4 ring-white/80 dark:ring-white/10"
         >
           {name.charAt(0)}
         </div>
       )}
-      <h1 className="mt-4 text-xl font-bold">{name}</h1>
-      <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">{bio}</p>
+      <h1 className="mt-6 text-2xl font-bold tracking-tight">{name}</h1>
+      <p className="mt-2 break-keep text-[15px] leading-relaxed text-stone-500 dark:text-stone-400">{bio}</p>
     </section>
   );
 }

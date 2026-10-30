@@ -14,12 +14,10 @@ export type Profile = {
 
 // TODO: 보여 주기용 더미 값. 실제 내용으로 교체할 것
 export const profile: Profile = {
-  name: "홍길동",
-  bio: "세계 최강 바이브코더",
-  image: "/profile.svg",
+  name: "옥수수깡",
+  bio: "나도 AI 개발을 배워보려구요!",
+  image: "/profile.jpg",
   links: [
-    { id: "github", title: "GitHub", url: "https://github.com" },
-    { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com" },
-    { id: "blog", title: "Blog", url: "https://velog.io" },
-  ],
+    { id: "github", title: "🐙 깃허브", url: "https://github.com/oksubyeon" },
+    { id: "blog", title: "✍️ 블로그", url: "https://www.naver.com" },  ],
 };

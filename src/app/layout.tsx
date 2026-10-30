@@ -25,8 +25,13 @@ export default function RootLayout({
     <html lang="ko" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* 한글이 포함된 둥근 산세리프. 쓰는 글자만 받아오는 subset 버전 */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
       </head>
-      <body className="min-h-screen bg-gray-50 text-gray-900 antialiased transition-colors dark:bg-gray-950 dark:text-gray-100">
+      <body className="min-h-screen bg-gradient-to-b from-[#FFF9F0] via-[#FFF0E3] to-[#FCDCC6] bg-fixed text-stone-800 antialiased transition-colors dark:from-[#1A1513] dark:via-[#1F1815] dark:to-[#2B1D17] dark:text-stone-100">
         {children}
       </body>
     </html>
